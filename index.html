@@ -47,6 +47,7 @@
           <h3>⚡ Lightning Strike</h3>
           <p>Undo opponent’s last session</p>
           <p>150 THB</p>
+          <button onclick="useSpecialAttack('Lightning Strike', 150, 20)">Use</button>
         </div>
       </div>
 
@@ -56,6 +57,7 @@
           <h3>🚀 Charge Attack</h3>
           <p>Double points every session</p>
           <p>175 THB</p>
+          <button onclick="useSpecialAttack('Charge Attack', 175, 25)">Use</button>
         </div>
       </div>
 
@@ -65,6 +67,7 @@
           <h3>🛡 Silent Shield</h3>
           <p>Protect against point loss</p>
           <p>200 THB</p>
+          <button onclick="useSpecialAttack('Silent Shield', 200, 15)">Use</button>
         </div>
       </div>
 
@@ -74,6 +77,7 @@
           <h3>🔥 Fireball</h3>
           <p>Destroy opponent’s progress</p>
           <p>300 THB</p>
+          <button onclick="useSpecialAttack('Fireball', 300, 40)">Use</button>
         </div>
       </div>
     </section>
@@ -85,6 +89,8 @@
         <div>
           <p><strong>Player:</strong> You</p>
           <p><strong>Points:</strong> <span id="points">200</span></p>
+          <p><strong>Workout Time:</strong> <span id="timer">0m 00s</span></p>
+          <p><strong>Total Damage:</strong> <span id="damage">0</span></p>
           <p><strong>Current Battle:</strong> You vs Bob</p>
         </div>
       </div>
