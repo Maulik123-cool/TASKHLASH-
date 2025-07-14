@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f8ff;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background-color: #4a7dff;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.attack-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.attack-card img {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+button {
+  background: #4a7dff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  margin: 0.3rem;
+  cursor: pointer;
+}
