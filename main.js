@@ -1,9 +1,15 @@
 let currentPoints = 200;
 
 function startBattle() {
-  alert("Battle Started! Your points: " + currentPoints);
+  alert("✅ Battle Started! Now go exercise to earn points!");
 }
 
-function viewDetails() {
-  alert("Chris vs Bob: 60 vs 40\nHealth: 🔋🔋🔋");
+function useSpecialAttack(name, cost) {
+  if (currentPoints >= cost) {
+    currentPoints -= cost;
+    document.getElementById("points").textContent = currentPoints;
+    alert(`🔥 You used ${name}!`);
+  } else {
+    alert("❌ Not enough points!");
+  }
 }
