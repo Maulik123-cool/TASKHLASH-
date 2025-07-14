@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASKLASH!!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TASKLASH!!</h1>
+    <p>Challenge Friends. Workout. Earn Points. Unleash Power.</p>
+    <nav>
+      <a href="#battle">Battle</a>
+      <a href="#store">Special Attacks</a>
+      <a href="#stats">Stats</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="battle">
+      <h2>Start a Battle</h2>
+      <label>Choose Opponent</label>
+      <input type="text" placeholder="Search..."/>
+
+      <label>Duration</label>
+      <select>
+        <option>1 Hour</option>
+        <option>1 Day</option>
+        <option>1 Week</option>
+        <option>Custom</option>
+      </select>
+
+      <label>Mode</label>
+      <button>1v1</button>
+      <button>2v2</button>
+
+      <button onclick="startBattle()">Start Battle</button>
+    </section>
+
+    <section id="store">
+      <h2>Special Attacks</h2>
+      <div class="attack-card">
+        <img src="assets/icons/lightning.png" alt="Lightning">
+        <div>
+          <h3>⚡ Lightning Strike</h3>
+          <p>Undo opponent’s session</p>
+          <p>150 THB</p>
+        </div>
+      </div>
+      <div class="attack-card">
+        <img src="assets/icons/rocket.png" alt="Rocket">
+        <div>
+          <h3>🚀 Charge Attack</h3>
+          <p>Double points in every session</p>
+          <p>175 THB</p>
+        </div>
+      </div>
+      <!-- Add more here -->
+    </section>
+
+    <section id="stats">
+      <h2>Your Stats</h2>
+      <p>Current Points: <strong id="points">200</strong></p>
+      <p>Current Battle: Chris vs Bob – 60 vs 40</p>
+      <button onclick="viewDetails()">View Details</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TASKLASH!!</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
