@@ -3,7 +3,7 @@ let damageGiven = 0;
 let workoutTime = 0; // in seconds
 
 function startBattle() {
-  alert("✅ Battle Started! Workout and earn points!");
+  alert("✅ Battle Started! Now go exercise to earn points!");
   startTimer();
 }
 
